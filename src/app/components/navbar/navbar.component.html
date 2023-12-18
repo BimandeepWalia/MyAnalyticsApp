@@ -1,0 +1,17 @@
+<div class="header">
+    <nav class="nav">
+        <mat-icon (click)="toggleSidebar()">menu</mat-icon>
+        <h3>MyAnalyticsApp</h3>
+        <div>
+            <button (click)="openDialog()"><a>Login</a></button>
+        </div>
+    </nav>
+</div>
+
+<div class="sidebar" [ngClass]="{'active': isSidebarOpen}">
+    <ul>
+        <li (click)="openDialog()">FaceBook</li>
+        <li (click)="openDialog()">Instagram</li>
+        <li (click)="openDialog()">LinkedIn</li>
+    </ul>
+</div>
