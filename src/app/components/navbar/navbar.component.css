@@ -56,6 +56,7 @@
 }
 
 .nav button {
+    margin-right: 20px;
     padding: 10px 15px;
     background-color: #4CAF50;
     color: white;
@@ -81,7 +82,7 @@
 }
 
 .sidebar.active {
-    width: 250px;
+    width: 90px;
 }
 
 /* Updated styles for Popup */
@@ -92,14 +93,42 @@
     transform: translate(-50%, -50%);
     background: #fff;
     padding: 20px;
-    display: none; /* Initially hidden */
-    z-index: 999; /* Ensure it's above other content */
-    max-width: 80%; /* Limit width to prevent overflow */
-    max-height: 80%; /* Limit height to prevent overflow */
-    overflow: hidden; /* Hide any overflowing content */
+    display: none;
+    /* Initially hidden */
+    z-index: 999;
+    /* Ensure it's above other content */
+    max-width: 80%;
+    /* Limit width to prevent overflow */
+    max-height: 80%;
+    /* Limit height to prevent overflow */
+    overflow: hidden;
+    /* Hide any overflowing content */
 }
 
 .login-popup.active {
-    display: block; /* Display the popup when active */
+    display: block;
+    /* Display the popup when active */
+}
+
+.sidebar ul li i {
+    margin-left: 10px;
+    font-size: 24px; /* Adjust this value to increase or decrease the size of the icons */
+}
+
+.mat-icon {
+    margin-left: 20px;
+}
+
+/* Styles for the sidebar when the viewport width is less than 768px */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #ffffff;
+        padding: 10px;
+        box-sizing: border-box;
+    }
 }
 

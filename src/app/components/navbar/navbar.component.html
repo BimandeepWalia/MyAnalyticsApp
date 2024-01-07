@@ -7,11 +7,10 @@
         </div>
     </nav>
 </div>
-
 <div class="sidebar" [ngClass]="{'active': isSidebarOpen}">
     <ul>
-        <li (click)="openDialog()">FaceBook</li>
-        <li (click)="openDialog()">Instagram</li>
-        <li (click)="openDialog()">LinkedIn</li>
+        <li (click)="openFBDialog()"><i class="fab fa-facebook"></i></li>
+        <li (click)="openInstaDialog()"><i class="fab fa-instagram"></i></li>
+        <li (click)="openLinkedInDialog()"><i class="fab fa-linkedin"></i></li>
     </ul>
 </div>

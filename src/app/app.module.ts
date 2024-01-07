@@ -13,13 +13,17 @@ import { MatButtonModule } from '@angular/material/button';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import {MatIconModule} from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
+import { InstaLoginComponent } from './components/insta-login/insta-login.component';
+import { LinkedInLoginComponent } from './components/linked-in-login/linked-in-login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FBloginComponent,
     SupersetComponent,
-    NavbarComponent 
+    NavbarComponent,
+    InstaLoginComponent,
+    LinkedInLoginComponent 
   ],
   imports: [
     BrowserModule,

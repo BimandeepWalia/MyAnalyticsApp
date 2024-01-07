@@ -40,20 +40,21 @@ export class FBloginComponent {
 
   onFacebookLoginClick() {
     debugger;
-    this.fb.login({ scope: 'public_profile,email' })
-      .then((response: LoginResponse) => {
-        if (response.authResponse) {
+    this.fb.login({ scope: 'public_profile,email' });
+    //   .then((response: LoginResponse) => {
+    //     if (response.authResponse) {
           this.getUserInfo();
           this.fetchDataFromFacebook();
-        } else {
-          // Handle login failure
-          console.log('Facebook login failed');
-        }
-      })
-      .catch((error: any) => console.error(error));
+      //   } else {
+      //     // Handle login failure
+      //     console.log('Facebook login failed');
+      //   }
+      // })
+      // .catch((error: any) => console.error(error));
   }
 
   getUserInfo() {
+    debugger;
     this.fb.api('/me?fields=name,email')
       .then((response: any) => {
         console.log('Successful login for: ', response.name);
@@ -69,6 +70,7 @@ export class FBloginComponent {
   // This new long-lived access token will expire on January 14, 2024
   async fetchDataFromFacebook() {
     try {
+      debugger;
       const response = await axios.get(this.url);
       const dataFromFacebook: AnalyticsData[] = response.data.data || []; // Extracting the 'data' array
       console.log(dataFromFacebook);

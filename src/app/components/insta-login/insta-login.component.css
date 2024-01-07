@@ -20,7 +20,7 @@
 }
 
 button {
-    background-color: #1877F2;
+    background: linear-gradient(45deg, #3a5895, #e4405f);
     color: #fff;
     font-size: 14px;
     padding: 10px;
@@ -32,6 +32,6 @@ button {
     transition: background-color 0.2s ease-in-out;
 }
 
-button:hover {
-    background-color: #166AC7;
+.btn-instagram:hover {
+    background: linear-gradient(45deg, #2c5185, #e03a5e);
 }
